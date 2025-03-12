@@ -29,11 +29,23 @@
         input {
             padding: 0.5rem;
             border-radius: .5rem;
-            width: 100%;
+            flex: 100%;
         }
 
         a {
             color: orangered;
+        }
+
+        @media screen and (min-width: 600px) {
+            input {
+                flex: auto;
+                flex: 1;
+            }
+
+            a {
+                order: 1;
+            }
+
         }
     </style>
 
