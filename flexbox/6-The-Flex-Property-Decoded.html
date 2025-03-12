@@ -10,19 +10,28 @@
 <body>
 
     <style>
-        section{
+        section {
             margin: 2rem auto;
             max-width: 56rem;
 
             display: flex;
-            gap: 1.5rem ;
+            gap: 1.5rem;
             border: 1px solid #ccc;
         }
 
-        .plan{
-            width: 33.33%;
+        .plan {
+
             padding: 1.5rem;
             border: 1px solid #d61818;
+            /* flex-basis: 0%;
+            flex-grow: 1; */
+            /* flex: 1 1 0%; */
+            flex: 1;
+            /* flex: initial | auto | none  */
+        }
+
+        .plan-highlight {
+            flex: 2;
         }
     </style>
     <section class="pricing">
@@ -38,7 +47,7 @@
             <p>$25</p>
         </div>
 
-        
+
 
 
         <div class="plan">
