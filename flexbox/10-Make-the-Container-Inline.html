@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Make-the-Container-Inline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <style>
+        section {
+            max-width: 48rem;
+            border: 1px solid #ccc;
+            padding: 1rem;          
+        }
+
+        label {
+            display: block;
+            color: #fff;
+            background: #555252;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: .5rem;              
+           
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked~span i {
+            color: aqua;
+        }
+    </style>
+    <section class="tags">
+        <label for="laravel">
+            <input type="checkbox" name="laravel" id="laravel" />
+            <p>Laravel</p>
+            <span><i class="fa-solid fa-circle-check"></i> </span>
+        </label>
+
+        <label for="webdelopment">
+            <input type="checkbox" name="webdelopment" id="webdelopment" />
+            <p>webdelopment</p>
+            <span><i class="fa-solid fa-circle-check"></i> </span>
+        </label>
+
+        <label for="tailwind">
+            <input type="checkbox" name="tailwind" id="tailwind" />
+            <p>tailwind</p>
+            <span><i class="fa-solid fa-circle-check"></i> </span>
+        </label>
+
+        <label for="react">
+            <input type="checkbox" name="react" id="react" />
+            <p>react</p>
+            <span><i class="fa-solid fa-circle-check"></i> </span>
+        </label>
+
+        <label for="vue">
+            <input type="checkbox" name="vue" id="vue" />
+            <p>vue</p>
+            <span><i class="fa-solid fa-circle-check"></i> </span>
+        </label>
+
+        <label for="cakephp">
+            <input type="checkbox" name="cakephp" id="cakephp" />
+            <p>cakephp</p>
+            <span><i class="fa-solid fa-circle-check"></i> </span>
+        </label>
+    </section>
+</body>
+
+</html>
