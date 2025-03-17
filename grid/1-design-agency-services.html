@@ -13,9 +13,21 @@
          background-color: #32343c;
          color: white;
 
+         display: grid;
+         /* grid-template-columns: 20rem 30rem; */
       }
 
-           
+      @media screen and (min-width: 480px) {
+         section {
+            grid-template-columns: 1fr 1fr;
+         }
+      }
+
+      @media screen and (min-width: 720px) {
+         section{
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+      }
 
       section>div {
          padding: 1.2rem;
@@ -35,7 +47,7 @@
    <section>
       <div>
          <h2>Logo Design</h2>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam recusandae.</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. a recusandae.</p>
       </div>
       <div>
          <h2>Graphic Design</h2>
